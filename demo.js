@@ -3,7 +3,7 @@ document.getElementById("shareButton").addEventListener("click", async () => {
 
     if (navigator.share) {
         await navigator.share({
-            title: `thala for reason - ${inputText}`,
+            title: `Behind everything, there is a reason! - ${inputText}`,
             url: `https://engineerdevsoul.github.io/engineersouldev//?q=${inputText}`,
         });
     } else {
