@@ -33,7 +33,7 @@ label[for="textInput"]
     color: black; 
 }
 #textInput::placeholder {
-    color: white;
+    color: red;
 }
 #playButton {
     padding: 10px;
