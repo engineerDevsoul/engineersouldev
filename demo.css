@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
      background-color: black;
-            color: yellow; /* Set text color to white for better visibility on a dark background */
+            color: white; /* Set text color to white for better visibility on a dark background */
 }
 
 #videoContainer {
@@ -28,6 +28,7 @@ body {
 #textInput {
     padding: 8px;
     margin-bottom: 10px;
+    color:black;
 }
 
 #playButton {
