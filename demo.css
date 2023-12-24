@@ -32,7 +32,9 @@ body {
 label[for="textInput"] 
     color: black; 
 }
-
+#textInput::placeholder {
+    color: white;
+}
 #playButton {
     padding: 10px;
     background-color: #4caf50;
