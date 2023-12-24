@@ -14,3 +14,30 @@ body {
 #alternativeContentContainer {
     display: none;
 }
+.box {
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Style the text input and check button */
+#textInput {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#playButton {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playButton:hover {
+    background-color: #45a049;
+}
+
