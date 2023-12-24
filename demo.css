@@ -25,7 +25,9 @@ body {
 }
 
 /* Style the text input and check button */
-
+#textInput {
+    color: black;
+}
 #playButton {
     padding: 10px;
     background-color: #4caf50;
