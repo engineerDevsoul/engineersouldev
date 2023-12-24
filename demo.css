@@ -40,4 +40,15 @@ body {
 #playButton:hover {
     background-color: #45a049;
 }
+#share {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+#share:hover {
+    background-color: #45a049;
+}
