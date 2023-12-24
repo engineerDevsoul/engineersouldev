@@ -7,8 +7,7 @@ document.getElementById("playButton").addEventListener("click", function() {
     var alternativeAudio = document.getElementById("alternativeAudio");
     var video = document.getElementById("myVideo");
 
-    // Replace 'YOUR_TEXT_CONDITION' with the desired text condition
-    if (inputText === '7') {
+    if (isThala(inputText)) {
         // Display the video container
         videoContainer.style.display = "block";
         alternativeContentContainer.style.display = "none";
@@ -38,3 +37,17 @@ document.getElementById("playButton").addEventListener("click", function() {
         });
     }
 });
+
+function isThala(string) {
+    let isNumber = !!parseInt(string);
+    let arrayOfValue = string.split("");
+    if (isNumber) {
+      let sum = 0;
+      arrayOfValue.forEach((e) => {
+        sum += parseInt(e);
+      });
+      return sum == 7;
+    } else {
+      return arrayOfValue.length == 7;
+    }
+}
