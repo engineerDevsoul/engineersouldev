@@ -2,7 +2,7 @@ share.addEventListener("click", async () => {
   if (navigator.share) {
     await navigator.share({
       title: `thala for reason - ${input.value}`,
-      url: `https://thalafar.netlify.app/?q=${input.value}`,
+      url: `https://engineerdevsoul.github.io/engineersouldev//?q=${input.value}`,
     });
   } else {
     console.log("no support");
