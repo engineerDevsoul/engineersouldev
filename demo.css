@@ -28,6 +28,10 @@ body {
 #textInput {
     padding: 8px;
     margin-bottom: 10px;
+
+
+label[for="textInput"] 
+    color: black;
 }
 
 #playButton {
