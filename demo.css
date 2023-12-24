@@ -25,16 +25,7 @@ body {
 }
 
 /* Style the text input and check button */
-#textInput {
-     padding: 8px;
-    margin-bottom: 10px;
 
-label[for="textInput"] 
-    color: black; 
-}
-#textInput::placeholder {
-    color: red;
-}
 #playButton {
     padding: 10px;
     background-color: #4caf50;
