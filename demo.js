@@ -1,15 +1,15 @@
 document.getElementById("shareButton").addEventListener("click", async () => {
-    var inputText = document.getElementById("textInput").value;
+            var inputText = document.getElementById("textInput").value;
 
-    if (navigator.share) {
-        await navigator.share({
-            title: `Behind everything, there is a reason! - ${inputText}`,
-            url: `https://engineerdevsoul.github.io/engineersouldev//?q=${inputText}`,
+            if (navigator.share) {
+                await navigator.share({
+                    title: `Behind everything, there is a reason! - ${inputText}`,
+                    url: `https://engineerdevsoul.github.io/engineersouldev//?q=${inputText}`,
+                });
+            } else {
+                console.log("Web Share API not supported");
+            }
         });
-    } else {
-        console.log("Web Share API not supported");
-    }
-});
 document.getElementById("playButton").addEventListener("click", function() {
     var inputText = document.getElementById("textInput").value.toLowerCase();
 
