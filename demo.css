@@ -5,6 +5,8 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+     background-color: black;
+            color: white; /* Set text color to white for better visibility on a dark background */
 }
 
 #videoContainer {
