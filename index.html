@@ -5,42 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show and Play Video or GIF on Text Match</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="demo.css">
 </head>
 <body>
-<div class="App flex items-center py-10 justify-center  ">
-    <div class="flex flex-col justify-center items-center gap-10 ">
-        <h1 class="text-7xl phone:text-2xl">Behind everything,there is a reason!</h1>
-         <div class="flex flex-col gap-5 bg-white px-14 py-14 shadow-2xl rounded-2xl phone:px-5">
-             
-         
-    <div class="flex flex-col h-screen justify-center items-center">
-        
-        <label for="textInput">Enter text:</label>
-        <input type="text" id="textInput" placeholder="Type specific text">
-        <button id="playButton" class="btn btn-primary">Check for reason </button>
+    <div class="App flex items-center py-10 justify-center">
+        <div class="flex flex-col justify-center items-center gap-10 ">
+            <h1 class="text-7xl phone:text-2xl">Behind everything, there is a reason!</h1>
+            <div class="flex flex-col gap-5 bg-white px-14 py-14 shadow-2xl rounded-2xl phone:px-5">
+                <div class="flex flex-col h-screen justify-center items-center">
+                    <label for="textInput">Enter text:</label>
+                    <input type="text" id="textInput" placeholder="Type specific text">
+                    <button id="playButton" class="btn btn-primary">Check for reason</button>
+                </div>
+            </div>
+        </div>
+        <div id="videoContainer">
+            <video id="myVideo" width="640" height="360" controls>
+                <!-- Replace 'YOUR_VIDEO_SOURCE' with the actual video source URL -->
+                <source src="3b37a044.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="alternativeContentContainer">
+            <!-- Replace 'ALTERNATIVE_GIF_SOURCE' with the actual alternative GIF source URL -->
+            <img id="alternativeGif" src="sad-kid.gif" alt="Alternative GIF">
+            <audio id="alternativeAudio">
+                <!-- Replace 'ALTERNATIVE_AUDIO_SOURCE' with the actual alternative audio source URL -->
+                <source src="moye-moye.mp3" type="audio/mp3">
+            </audio>
+        </div>
     </div>
-</div>
-    </div>
-    
-    <div id="videoContainer">
-        <video id="myVideo" width="640" height="360" controls>
-            <!-- Replace 'YOUR_VIDEO_SOURCE' with the actual video source URL -->
-            <source src="3b37a044.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <div id="alternativeContentContainer">
-        <!-- Replace 'ALTERNATIVE_GIF_SOURCE' with the actual alternative GIF source URL -->
-        <img id="alternativeGif" src="sad-kid.gif" alt="Alternative GIF">
-        <audio id="alternativeAudio">
-            <!-- Replace 'ALTERNATIVE_AUDIO_SOURCE' with the actual alternative audio source URL -->
-            <source src="moye-moye.mp3" type="audio/mp3">
-        </audio>
-    </div>
-</div>
     <script src="demo.js"></script>
 </body>
 </html>
