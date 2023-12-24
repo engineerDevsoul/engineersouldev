@@ -26,9 +26,9 @@ body {
 
 /* Style the text input and check button */
 #textInput {
-    padding: 8px;
+/*     padding: 8px;
     margin-bottom: 10px;
-
+ */
 
 label[for="textInput"] 
     color: black;
