@@ -1,12 +1,14 @@
-share.addEventListener("click", async () => {
-  if (navigator.share) {
-    await navigator.share({
-      title: `thala for reason - ${input.value}`,
-      url: `https://engineerdevsoul.github.io/engineersouldev//?q=${input.value}`,
-    });
-  } else {
-    console.log("no support");
-  }
+document.getElementById("shareButton").addEventListener("click", async () => {
+    var inputText = document.getElementById("textInput").value;
+
+    if (navigator.share) {
+        await navigator.share({
+            title: `thala for reason - ${inputText}`,
+            url: `https://engineerdevsoul.github.io/engineersouldev//?q=${inputText}`,
+        });
+    } else {
+        console.log("Web Share API not supported");
+    }
 });
 document.getElementById("playButton").addEventListener("click", function() {
     var inputText = document.getElementById("textInput").value.toLowerCase();
